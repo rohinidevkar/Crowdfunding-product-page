@@ -1,0 +1,30 @@
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.text-color-primary {
+    color: var(--clr-primary-400);
+}
+
+.text-color-neutral-400 {
+    color: var(--clr-neutral-400);
+}
+
+/* Flexbox */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+

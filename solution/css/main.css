@@ -1,0 +1,52 @@
+@import url("./reset.css");
+
+@import url("./general/typography.css");
+@import url("./general/layout.css");
+@import url("./general/navbar.css");
+@import url("./general/buttons.css");
+@import url("./general/inputs.css");
+@import url("./general/utils.css");
+
+@import url("./components/title-tile.css");
+@import url("./components/statistics-tile.css");
+@import url("./components/about-tile.css");
+@import url("./components/modal.css");
+
+
+/* =================
+       General
+   ================= 
+*/
+
+:root {
+    --clr-primary-400: #3CB4AC;
+    --clr-primary-600: #147B74;
+
+    --clr-neutral-100: #ffffff;
+    --clr-neutral-150: rgba(221, 217, 217, 0.281);
+    --clr-neutral-200: #c3c2c2;
+    --clr-neutral-400: #7A7A7A;
+    --clr-neutral-900: #000000;
+
+    --ff-primary: 'Commissioner', sans-serif;
+    --fw-regular: 400;
+    --fw-semibold: 500;
+    --fw-bold: 700;
+
+    --line-height-smaller: 1;
+    --line-height-small: 1.15;
+    --line-height-regular: 1.6;
+    --line-height-large: 2;
+
+    --progress-bar-width: 76%;
+    --domain-border-radius: 10px;
+}
+
+
+body {
+    font-family:  var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: var(--line-height-regular);
+    background-color: var(--clr-neutral-150);
+}

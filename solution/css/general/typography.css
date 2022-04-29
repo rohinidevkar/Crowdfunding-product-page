@@ -1,0 +1,26 @@
+h1,
+h2 {
+    line-height: var(--line-height-small);
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+}
+
+p {
+    color: var(--clr-neutral-400);
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+
+img {
+    display: block;
+    width: auto;
+}
+
+@media(min-width: 600px) {
+    p {
+        font-size: .9rem;
+    }
+}

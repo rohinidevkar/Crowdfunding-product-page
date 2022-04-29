@@ -1,0 +1,147 @@
+/* ============
+    Main section
+   ============ */
+
+.reward-card {
+    position: relative;
+    padding: 1.5rem;
+    border: .75px solid var(--clr-neutral-200);
+    border-radius: var(--domain-border-radius);
+}
+
+.reward-card:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.reward-header,
+.left {
+    margin-bottom: 1rem;
+}
+
+.reward-availability {
+    flex-wrap: wrap;
+}
+
+/* ============
+    Modal cards
+   ============ */
+.modal .reward-card:hover {
+    cursor: pointer;
+}
+
+.modal .reward-card:hover .reward-title,
+.modal .custom-checkbox:hover {
+    color: var(--clr-primary-400);
+}
+
+.modal .reward-header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal .reward-header-wrapper .custom-checkbox {
+    align-self: baseline;
+    margin-top: 0.25rem;
+    margin-right: 1.2rem;
+}
+
+.modal .reward-title {
+    display: inline-flex;
+    transition: color .1s;
+}
+
+.modal .left {
+    margin-bottom: 0;
+}
+
+/* Modal pledge */
+
+.add-pledge-section {
+    display: none;
+}
+
+.add-pledge-section hr {
+    margin: 1rem -1.5rem;
+    border-color: var(--clr-neutral-150);
+    background-color: var(--clr-neutral-150);
+}
+
+.enter-pledge {
+    margin: 1.5rem auto;
+    text-align: center;
+    color: var(--clr-neutral-400);
+    font-size: .9rem;
+}
+
+/* ============
+      General
+   ============ */
+.out-of-stock {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.small-text {
+    font-weight: var(--fw-regular);
+    font-size: 0.5em;
+    color: var(--clr-neutral-400);
+    vertical-align: 3px
+}
+
+@media(min-width: 600px) {
+
+    .reward-header-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .modal .reward-description {
+        margin-left: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .reward-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .pledge {
+        text-align: right;
+    }
+
+    .modal .reward-availability {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.4rem;
+    }
+
+    .reward-availability {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .reward-availability > * {
+        flex-basis: auto;
+    }
+
+    .left {
+        margin-bottom: 0;
+    }
+
+    /* modal pledge */
+
+    .pledge-form-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .enter-pledge {
+        margin: 0;
+    }
+
+}

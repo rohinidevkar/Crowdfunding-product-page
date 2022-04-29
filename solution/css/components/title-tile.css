@@ -1,0 +1,16 @@
+.title-card .small-logo {
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: translateX(-50%);
+}
+
+.title {
+    font-size: 1.26rem;
+    margin-bottom: 1rem;
+}
+
+.accent-number {
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
